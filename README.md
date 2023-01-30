@@ -1,6 +1,4 @@
-# Ruby-Template
-Project Description updated upon project completion.
-
+# Ruby-OOP-School-Library
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 <a name="readme-top"></a>
