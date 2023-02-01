@@ -14,6 +14,6 @@ class Student < Person
 
   def set_classroom(classroom) # rubocop:disable Naming/AccessorMethodName
     @classroom = classroom
-    classroom.students << self
+    classroom.students << self unless classroom.students.include?(self)
   end
 end
