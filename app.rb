@@ -116,38 +116,35 @@ class App
   def create_rental
     puts 'Select a book from the following list'
     @books.each_with_index do |book, index|
-      puts "#{index + 1}) Title: #{book.title}, Author: #{book.author}"
+      puts "#{index + 1}) Title: \"#{book.title}\", Author: #{book.author}"
     end
     book_num = gets.chomp.to_i
 
-    puts 'Select a person from the following list'
+    puts 'Select a person from the following list (not id)'
     @person.each_with_index do |per, index|
-      puts "No: #{index + 1}, [#{per.class}] Name: #{per.name}, ID: #{per.id}, Age: #{per.age}"
+      puts "#{index + 1}) [#{per.class}] Name: #{per.name}, ID: #{per.id}, Age: #{per.age}"
     end
-    puts @person[0].name
+
     iam = gets.chomp.to_i
-    puts iam
-    puts "HERE #{@person[iam - 1].name}"
-    puts @person[iam - 1].name
+
     print 'Date:'
     date = gets.chomp
 
     p_index = iam - 1
-    p @person[p_index]
+
     @rentals.push(Rental.new(date, @books[book_num - 1], @person[p_index]))
     puts 'Rental Created successfully'
   end
 
   def list_rentals
-    print 'Kindly enter the ID of the person:'
+    print 'ID of person:'
     id = gets.chomp
     id = id.to_i
 
     puts 'Rentals'
 
     @rentals.each do |rental|
-      puts rental.person
-      puts "Date: #{rental.date} Book: #{rental.book.title} by #{rental.book.author}" if rental.person.id == id
+      puts "Date: #{rental.date} Book: \"#{rental.book.title}\" by #{rental.book.author}" if rental.person.id == id
     end
   end
 end
