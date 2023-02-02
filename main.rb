@@ -1,4 +1,4 @@
-require './app' # import the App class
+require './app'
 
 def main # rubocop:disable Metrics/AbcSize, Metrics/MethodLength, Metrics/CyclomaticComplexity
   app = App.new

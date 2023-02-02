@@ -1,9 +1,9 @@
-require './person' # import the Person class
-require './student' # import the Student class
-require './teacher' # import the Teacher class
-require './rental' # import the Rental class
-require './book' # import the Book class
-require './classroom' # import the Classroom class
+require './person'
+require './student'
+require './teacher'
+require './rental'
+require './book'
+require './classroom'
 require_relative './nameable/capitalize_decorator'
 require_relative './nameable/trimmer_decorator'
 
@@ -14,7 +14,6 @@ class App
     @rental = []
   end
 
-  # method for books
   attr_reader :books, :people
 
   def list_all_books
