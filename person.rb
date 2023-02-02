@@ -28,8 +28,8 @@ class Person < Nameable
   # many to many relationship
   attr_reader :rentals
 
-  def add_rental(date, book)
-    Rental.new(date, self, book)
+  def add_rental(person, date)
+    @rentals.push(person, date, self)
   end
 
   private
