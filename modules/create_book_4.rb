@@ -1,7 +1,7 @@
 module CreateBook
   # 4
   def create_book
-    puts "_________________NEW BOOK________________\n "
+    puts "Create new book\n "
     puts "Enter book's information please"
     print 'Title: '
     title = gets.chomp

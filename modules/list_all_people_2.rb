@@ -1,7 +1,7 @@
 module ListAllPeople
   # 2
   def list_all_people
-    puts "_________________LIST PEOPLE________________\n "
+    puts "List all of the people\n "
     puts "These are all saved people:\ncount(#{@people.count})\n "
     if @people.empty?
       puts "No people in the database\n "

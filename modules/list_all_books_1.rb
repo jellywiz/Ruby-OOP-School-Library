@@ -1,7 +1,7 @@
 module ListAllBooks
   # 1
   def list_all_books
-    puts "_________________LIST BOOKS________________\n "
+    puts "List all of the books\n "
     puts "These are all saved books:\ncount(#{@books.count})\n "
     if @books.empty?
       puts "No books in the database\n "
