@@ -104,6 +104,11 @@ Example commands:
 - GitHub: [@Muzaffer Dler](https://github.com/jellywiz/)
 - LinkedIn: [Muzaffer Dler](https://www.linkedin.com/in/muzaffer-dler-473484205/)
 
+👤 **Italo Lon kan**
+
+- GitHub: [@storres20](https://github.com/storres20)
+- LinkedIn: [Italo Lon kan Perez](https://www.linkedin.com/in/italo-lon-kan/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
