@@ -16,7 +16,6 @@ require_relative './modules/list_rentals_6'
 require_relative './modules/menu'
 
 class App
-
   include ListAllBooks
   include ListAllPeople
   include CreatePerson
