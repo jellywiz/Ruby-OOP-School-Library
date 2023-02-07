@@ -15,6 +15,7 @@ require_relative './modules/create_rental_5'
 require_relative './modules/list_rentals_6'
 require_relative './modules/menu'
 require_relative './data/handle_exit'
+require_relative './data/read_data'
 
 class App
   include ListAllBooks
@@ -25,9 +26,11 @@ class App
   include ListRentals
   include Menu
   include HandleExit
+  include ReadData
 
   def initialize
     @books = []
+    @people = read_people
     @people = []
     @rentals = []
     @classrooms = []
