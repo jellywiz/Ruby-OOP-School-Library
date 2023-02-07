@@ -7,4 +7,4 @@ gem 'rspec', '>=3.0', '< 4.0'
 
 gem 'time'
 
-gem "json", "~> 2.6"
+gem 'json', '~> 2.6'
