@@ -32,7 +32,7 @@ class App
     @books = read_books
     @people = read_people
     @people = []
-    @rentals = []
+    @rentals = read_rentals
     @classrooms = []
   end
 
