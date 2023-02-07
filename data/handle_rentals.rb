@@ -11,3 +11,6 @@ module HandleRentals
                                   }
                                 end)
     File.write('./data/rentals.json', data)
+    puts 'rentals saved successfully'
+  end
+end

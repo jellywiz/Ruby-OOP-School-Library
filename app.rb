@@ -31,7 +31,6 @@ class App
   def initialize
     @books = read_books
     @people = read_people
-    @people = []
     @rentals = read_rentals
     @classrooms = []
   end
