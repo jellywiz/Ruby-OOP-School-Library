@@ -1,5 +1,4 @@
 module CreateBook
-
   def create_book
     puts "Create new book\n "
     puts "Enter book's information please"

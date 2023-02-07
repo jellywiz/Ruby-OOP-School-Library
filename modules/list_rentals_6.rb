@@ -11,3 +11,4 @@ module ListRentals
     end
     run
   end
+end

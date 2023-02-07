@@ -38,13 +38,15 @@ class App
   def run
     display_menu
     command = gets.chomp.to_i
+    system('cls')
+    system('clear')
     handle_command(command) unless command == 7
     puts 'Thank you for using this app!'
+    handle_exit
     exit
   end
 
   def handle_command(command)
-    system('clear')
     case command
     when 1
       list_all_books

@@ -1,5 +1,4 @@
 module ListAllBooks
-
   def list_all_books
     puts "List all of the books\n "
     puts "These are all saved books:\ncount(#{@books.count})\n "
