@@ -16,6 +16,7 @@ module CreatePerson
     puts 'Person created successfully!'
     run
   end
+
   # 3.1
   def create_student
     puts "Enter student's information please"
@@ -38,6 +39,7 @@ module CreatePerson
     found_index = labels.index(label)
     found_index ? @classrooms[found_index] : Classroom.new(label)
   end
+
   # 3.1.Y/N
   def permission?
     print 'Has parent permission? [Y/N]: '
@@ -52,6 +54,7 @@ module CreatePerson
       permission?
     end
   end
+
   # 3.2
   def create_teacher
     puts "Enter teacher's information please"
