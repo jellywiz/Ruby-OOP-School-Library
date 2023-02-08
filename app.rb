@@ -14,6 +14,8 @@ require_relative './modules/create_book_4'
 require_relative './modules/create_rental_5'
 require_relative './modules/list_rentals_6'
 require_relative './modules/menu'
+require_relative './data/handle_exit'
+require_relative './data/read_data'
 
 class App
   include ListAllBooks
@@ -23,24 +25,28 @@ class App
   include CreateRental
   include ListRentals
   include Menu
+  include HandleExit
+  include ReadData
 
   def initialize
-    @books = []
-    @people = []
-    @rentals = []
+    @books = read_books
+    @people = read_people
+    @rentals = read_rentals
     @classrooms = []
   end
 
   def run
     display_menu
     command = gets.chomp.to_i
+    system('cls')
+    system('clear')
     handle_command(command) unless command == 7
     puts 'Thank you for using this app!'
+    handle_exit
     exit
   end
 
   def handle_command(command)
-    system('clear')
     case command
     when 1
       list_all_books

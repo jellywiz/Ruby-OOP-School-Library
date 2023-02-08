@@ -1,8 +1,9 @@
 require_relative 'app'
 
 def main
+  system('cls')
   system('clear')
-  puts "________Welcome to School Library App!________\n "
+  puts "Welcome to School Library App!\n "
   app = App.new
   app.run
 end
