@@ -1,23 +1,14 @@
-require_relative './../student'
+require_relative './../nameable/capitalize_decorator'
 require_relative './../person'
-require_relative './../nameable/nameable_decorator'
 
-describe 'Test student object' do
-  student = Student.new('A1', 18, 'Test Name', parent_permission: true)
-
-  it 'takes parameters and returns a Person object' do
-    expect(student).to be_kind_of(Person)
+describe 'Test capitalize_decorator object' do
+  person = Person.new(22, 'maximilianus')
+  capitalized_person = CapitalizeDecorator.new(person)
+  it 'takes parameters and returns a corrected name' do
+    expect(capitalized_person.correct_name).to eql('Maximilianus')
   end
 
-  it 'takes parameters and returns a Nameable object' do
-    expect(student).to be_kind_of(Nameable)
-  end
-
-  it 'takes parameters and returns a Student object' do
-    expect(student).to be_instance_of(Student)
-  end
-
-  it "student name should be 'Test Name'" do
-    expect(student.name).to eql 'Test Name'
+  it 'takes parameters and returns a CapitalizeDecorator object' do
+    expect(capitalized_person).to be_instance_of(CapitalizeDecorator)
   end
 end
