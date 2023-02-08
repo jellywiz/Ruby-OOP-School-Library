@@ -1,6 +1,6 @@
 require_relative './../teacher'
 require_relative './../person'
-require_relative './../nameable/nameable_decoder'
+require_relative './../nameable/nameable_decorator'
 
 describe "Test teacher object" do
   teacher = Teacher.new('Philosophy', 18, 'Test Name')

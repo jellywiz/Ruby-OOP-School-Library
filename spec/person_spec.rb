@@ -1,5 +1,5 @@
 require_relative './../person'
-require_relative './../nameable/nameable_decoder'
+require_relative './../nameable/nameable_decorator'
 
 describe "Test person object" do
   person = Person.new(18)
